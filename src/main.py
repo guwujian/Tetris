@@ -1,31 +1,3 @@
-'''
-def foo():
-    print("starting...")
-    while True:
-        yield 6
-        g = 8
-        print("g:",g)
-g = foo()
-print("#"*20)
-print(next(g))
-print("*"*20)
-print(next(g))
-print("$"*20)
-
-
-import pickle
-obj = ['aa', 'bb', 'cc'] #str("my obj")
-with open("f.txt",'wb') as file:
-    b = pickle.dump(obj,file) #protocol=3
-    print(b)
-
-    
-with open("f.txt",'rb') as file:
-    obj2 = pickle.load(file)
-    obj2.append('dd')
-    print(obj2)
-'''
-
 import random, time, pygame, sys
 from pygame.locals import *
 
